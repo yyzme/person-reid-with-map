@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>draw</title>
+		<meta charset="UTF-8">
+		<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+		
+		<link href='http://localhost:9000/bigemap.js/v2.1.0/bigemap.css' rel='stylesheet' />
+		<script src='http://localhost:9000/bigemap.js/v2.1.0/bigemap.js'></script>
+		
+		<!--引入鼠标绘制的JS+CSS-->
+		<link rel="stylesheet" href="/Public/mouse_draw/Bigemap.draw.css"/>
+		<script src="/Public/mouse_draw/Bigemap.draw.js"></script>
+		<script src="/Public/mouse_draw/Bigemap.Draw.Event.js"></script>
+		
+		<script src="/Public/mouse_draw/edit/handler/Edit.Poly.js"></script>
+		<script src="/Public/mouse_draw/edit/handler/Edit.SimpleShape.js"></script>
+		<script src="/Public/mouse_draw/edit/handler/Edit.Rectangle.js"></script>
+		<script src="/Public/mouse_draw/edit/handler/Edit.Marker.js"></script>
+		<script src="/Public/mouse_draw/edit/handler/Edit.CircleMarker.js"></script>
+		<script src="/Public/mouse_draw/edit/handler/Edit.Circle.js"></script>
+		
+		<script src="/Public/mouse_draw/draw/handler/Draw.Feature.js"></script>
+		<script src="/Public/mouse_draw/draw/handler/Draw.Polyline.js"></script>
+		<script src="/Public/mouse_draw/draw/handler/Draw.Polygon.js"></script>
+		<script src="/Public/mouse_draw/draw/handler/Draw.SimpleShape.js"></script>
+		<script src="/Public/mouse_draw/draw/handler/Draw.Rectangle.js"></script>
+		<script src="/Public/mouse_draw/draw/handler/Draw.Circle.js"></script>
+		<script src="/Public/mouse_draw/draw/handler/Draw.Marker.js"></script>
+		<script src="/Public/mouse_draw/draw/handler/Draw.CircleMarker.js"></script>
+		
+		<script src="/Public/mouse_draw/ext/TouchEvents.js"></script>
+		<script src="/Public/mouse_draw/ext/LatLngUtil.js"></script>
+		<script src="/Public/mouse_draw/ext/GeometryUtil.js"></script>
+		<script src="/Public/mouse_draw/ext/LineUtil.Intersect.js"></script>
+		<script src="/Public/mouse_draw/ext/Polyline.Intersect.js"></script>
+		<script src="/Public/mouse_draw/ext/Polygon.Intersect.js"></script>
+		
+		<script src="/Public/mouse_draw/Control.Draw.js"></script>
+		<script src="/Public/mouse_draw/Tooltip.js"></script>
+		<script src="/Public/mouse_draw/Toolbar.js"></script>
+		
+		<script src="/Public/mouse_draw/draw/DrawToolbar.js"></script>
+		<script src="/Public/mouse_draw/edit/EditToolbar.js"></script>
+		<script src="/Public/mouse_draw/edit/handler/EditToolbar.Edit.js"></script>
+		<script src="/Public/mouse_draw/edit/handler/EditToolbar.Delete.js"></script>
+		
+		<script type="text/javascript" src="./Public/offline/polyline_arrow/patternUtils.js"></script>
+		<script type="text/javascript" src="./Public/offline/polyline_arrow/symbol.js"></script>
+		<script type="text/javascript" src="./Public/offline/polyline_arrow/polyline_arrow.js"></script>
+		
+		<style type="text/css">
+			body{background-color: #222}
+			.videos{ display:none; border: 1px solid #080808; position:absolute; left:50%; top:50%; margin-left:-320px; margin-top:-210px; z-index:100; width:640px; height:360px; background-color: white}
+			.vclose { position:absolute;right:1%; top:1%; border-radius:100%; cursor: pointer; }
+		</style>
+		
+		<link rel="stylesheet" type="text/css" href="./static/css/popup.css">
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+	
+	<style type="text/css">
+		html,body,#map{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	
+	<body>
+		<div class="video">
+			<div class="videos"></div>
+		</div>
+		
+		<div class="result">
+		</div>
+		
+		<div id="map">
+		</div>
+		
+		<script src="./Public/map/map_init.js"></script>
+		<script src="./Public/map/map_control.js"></script>
+	</body>
+</html>                                                                                                                                                                                                                                                            

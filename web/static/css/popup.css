@@ -1,0 +1,104 @@
+.loading {
+width:180px;
+height:30px;
+/*border:3px solid #C3DAF9;*/
+position:absolute;
+left:230px;
+top:165px;
+z-index:10000; 
+/*background-color:#F7F9FC;*/
+text-align=center;
+line-height:30px;
+vertical-align:middle;
+font-size:12pt;
+}
+
+.video-warp {
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	float:left;
+}
+
+.display {
+	width: 25%;
+	margin: auto;
+	text-align: center;
+	float:left;
+}
+
+video {
+	width: 100%;
+}
+
+.controls {
+	width: 100%;
+	background: #ccc;
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: 5px;
+	position: relative;
+}
+
+.controls i {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../icon/play.jpg) no-repeat;
+	background-size: 100%;
+	float: left;
+	margin-right: 5px;
+	margin-top: 0px;
+}
+
+.controls i:nth-of-type(2) {
+	display: none;
+	background: url(../icon/pause.jpg) no-repeat;
+	background-size: 100%;
+}
+
+.controls i:nth-of-type(3) {
+	background: url(../icon/capture.jpg) no-repeat;
+	
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+	float: left;
+	margin-right: 15px;
+	margin-top: 0px;
+}
+
+.progress {
+	display: inline-block;
+	width: 60%;
+	height: 10px;
+	line-height: 10px;
+	background: #e5e9ef;
+	border-radius: 5px;
+	vertical-align: super;
+	overflow: hidden;
+}
+
+.video-timer {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.timrBar {
+	display: inline-block;
+	height: 11px;
+	background: #8adced;
+}
+
+#screen{
+	float: right;
+	margin-right: 5px;
+	margin-top: 0px;
+	width: 20px;
+	height: 20px;
+	background:url(../icon/fullscreen.jpg);
+	background-size:contain ;
+}
